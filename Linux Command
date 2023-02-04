@@ -1,0 +1,164 @@
+$ date
+Sat Apr
+9 13:03:47 IST 2011
+$ date +%D
+04/09/11
+$ date +%T
+13:05:333
+$ date +%Y
+2011
+$ date +%H
+13
+$ cal 08 1998
+August 1998
+Su Mo Tu We Th Fr Sa
+1
+2 3 4 5 6 7 8
+9 10 11 12 13 14 15
+16 17 18 19 20 21 22
+23 24 25 26 27 28 29
+30 31
+$ who
+root
+vijai
+cse4001
+:0
+pts/0
+pts/3
+Apr
+Apr
+Apr
+9 08:41
+9 13:00 (scl-64)
+9 13:18 (scl-41.smkfomra.com)
+$ uname
+Linux
+$ uname -r
+2.4.20-8smp
+$ uname -n
+localhost.localdomain
+$ echo $HOME
+/home/vijai
+$ echo $USER
+vijai
+$ bc
+3+5
+8
+$ pwd
+/home/vijai/shellscripts/loops
+$ mkdir filter
+$ ls
+filter
+list.sh
+regexpr
+$ cd shellscripts/loops/
+shellscripts4
+$
+$ cd
+$
+$ cd /
+[vijai@localhost /]$
+[vijai@localhost /]$ cd /home/vijai/shellscripts/loops/
+$ cd ..
+[vijai@localhost shellscripts]$
+$ rmdir filter
+$ ls
+list.sh
+regexpr
+shellscripts
+$ cat > greet
+hi cse
+wishing u the best
+$ cat greet
+hi ece-a
+wishing u the best
+$ cat >> greet
+bye
+$ cat greet
+hi cse
+wishing u the best
+bye
+$ ls
+greet
+list.sh
+regexpr
+shellscripts
+$ ls -a
+.
+..
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.canna
+.emacs
+greet
+.gtkrc
+.kde
+list.sh
+regexpr
+shellscripts
+.viminfo
+.viminfo.tmp
+.xemacs
+$ ls -l
+-rw-rw-r--
+-rw-rw-r--
+drwxrwxr-x
+1 vijai
+1 vijai
+2 vijai
+vijai
+vijai
+vijai
+$ cp greet ./regexpr/
+$ ls
+greet
+list.sh
+$ ls ./regexpr
+regexpr
+shellscripts
+32 Apr 11 14:52 greet
+30 Apr 4 13:58 list.sh
+4096 Apr 9 14:30 regexpr5
+demo greet
+$ cp -i greet ./regexpr/
+cp: overwrite 'greet'? n
+$ mv greet greet.txt
+$ ls
+greet.txt
+list.sh
+regexpr
+shellscripts
+$ mv greet.txt ./regexpr/
+$ ls
+list.sh regexpr shellscripts
+$ rm -i *.sh
+rm: remove regular file 'fact.sh'? y
+rm: remove regular file 'prime.sh'? y
+$ ls
+list.sh
+regexpr
+shellscripts
+$ wc list.sh
+4
+9
+30 list.sh
+$ wc -l list.sh
+4 list.sh
+$ cmp list.sh fact.sh
+list.sh fact.sh differ: byte 1, line 1
+$ ls -l list.sh
+-rw-rw-r--
+1 vijai
+vijai30 Apr4 13:58 list.sh
+vijai30 Apr4 13:58 list.sh
+vijai30 Apr4 13:58 list.sh
+$ chmod ug+x list.sh
+$ ls -l list.sh
+-rwxrwxr--
+1 vijai
+$ chmod 740 list.sh
+$ ls -l list.sh
+-rwxr-----
+1 vijai
